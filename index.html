@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Innovator Survey</title>
+<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style-main.css" type="text/css" media="all">
+
+<!--javascript below is a test suite from Free Code Camp -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+</head>
+
+<body>
+<div class="container">
+  
+  <header>
+  <div id="title-letters">
+  <h1 id="title">I</h1>
+    <h1 id="n">n</h1>
+    <h1 id="n2">n</h1>
+    <h1 id="zero">0</h1>
+    <h1 id="v">v</h1>
+    <h1 id="a">a</h1>
+    <h1 id="t">t</h1>
+    <h1 id="o">o</h1>
+    <h1 id="r">r</h1>
+    <h1 id="space"></h1>
+    <h1 id="s">S</h1>
+    <h1 id="u">u</h1>
+    <h1 id="r2">r</h1>
+    <h1 id="v2">v</h1>
+    <h1 id="e">e</h1>
+    <h1 id="y">y</h1>
+    
+    </div>
+    <p id="description">Are you an innovator? Or becoming one?</p> <p id="description2"> Complete this survey. </p>
+  </header>
+  
+  <form id="survey-form">
+    <contact-info>
+    <div class="form">
+      <label id="name-label" for="name">Name</label>
+      <input type="text"
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="What is your name?" 
+             required/>
+    </div>
+    
+    <div class="form">
+      <label id="email-label" for="email">Email</label>
+      <input type="email"
+             name="email"
+             id="email"
+             class="form-control"
+             placeholder="Enter your email"
+             required/>
+    </div>
+    
+    <div class="form">
+      <label id="number-label" for="number">Age</label>
+      <input type="number"
+             name="number"
+             min="4"
+             max="120"
+             id="number"
+             class="form-control"
+             placeholder="Your age?"/>
+    </div>
+    </contact-info>
+    
+    <div class="form">
+      <p><strong>Which option best describes your general way of thinking?</strong></p>
+      <select id="dropdown" name="thinker" class="form-control" required>
+        <option disabled selected value>Select general thinking pattern</option>
+        <option value="complacency">"Technologically speaking, this is it: developed countries have completed their technological innovation."</option>
+        <option value="lazy">"A few people will always improve technology, just not me."</option>
+        <option value="techHellBlazer">"Of course I am working every day, every hour, to improve technology with the aim of improving the human condition."</option>
+        <option value="imposter">"I just want to be in the tech industry to be sexy like Steve Jobs."</option>
+        <option value="hopeless">"I hope technology improves, but I won't live to see any big improvements."</option>
+      </select>
+    </div>
+      
+  <div class="form">
+    <p><strong>Would you recommend dedicating your life to improving tehcnology?</strong></p>
+    <radios> 
+    <label>
+        <input
+               name="user-recommend"
+               value="Sure as Shit"
+               type="radio"
+               class="input-radio"
+               checked/>
+        Sure as Shit</label>
+      
+    <label>
+        <input 
+               name="user-recommend"
+               value="Possibly"
+               type="radio"
+               class="input-radio"
+                />
+        Possibly</label>
+      
+    <label>
+      <input 
+             name="user-recommend"
+             value="Maybe...do you have an NZT-48?"
+             type="radio"
+             class="input-radio"/>
+        Maybe...do you have an NZT-48?
+      </label>
+      <label>
+        <input
+               name="user-recommend"
+               value="Fuck No!"
+               type="radio"
+               class="input-radio"
+               />
+        Fuck No!
+      </label>
+    </radios>
+  </div>
+    
+    <div class="form">
+      <p><strong>Who is your favorite innovator (if you have one)</strong></p>
+      <select id="dropdown2" name="innovator" class="form-control" required>
+        <option disabled selected value>Pick your innovator</option>
+        <option value="newton">Newton</option>
+        <option value="jobs">Steve Jobs</option>
+        <option value="neumann">John von Neumann</option>
+        <option value="einstein">Albert Einstein</option>
+        <option value="feynman">Richard Feynman</option>
+        <option value="none">Don't have one (I'm a loser)</option>
+      </select>
+        </div>
+      
+ <div class="form">
+  
+<p><strong>
+  What technologies do you want to see in the future? (Check all that apply)</strong>
+ </p>
+   <future-tech>
+   <label>
+     <input
+            name="prefer"
+            value="wormehole-based transport"
+            type="checkbox"
+            class="input-checkbox"/>
+     Wormhole-based Transport
+   </label>
+  
+   <label>
+     <input
+            name="prefer"
+            value="underground transport system"
+            type="checkbox"
+            class="input-checkbox"/>
+     Underground Transport System for Personal Vehicles
+   </label>
+   
+   <label>
+     <input
+            name="prefer"
+            value="medical tech that enables human amortality"
+            type="checkbox"
+            class="input-checkbox"/>
+     Medical Tech that Enables Human Amortality
+   </label>
+   
+   <label>
+   <input
+          name="prefer"
+          value="Ubiquitous Prevalence of Desalination Machines"
+          type="checkbox"
+          class="input-checkbox"/>
+     Ubiquitous Prevalence of Desalination Machines
+   </label>
+     </future-tech>
+      </div>
+    <div class="form">
+      <p><strong>Any ideas to speed up innovation?</strong><p>
+      <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter you idea here...">
+        </textarea>
+    </div>
+    <div class="form">
+      <button type="submit" id="submit"
+              class="submit-button">
+        <strong>Submit</strong>
+      </button>
+    </div>
+           </form>
+    </div>
+  </body>
+ </html>
